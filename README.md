@@ -225,16 +225,3 @@ data/              small cached CSVs (real public data)
   covers RLHF/GRPO and distillation only. It uses LangGraph-style
   multi-agent orchestration nowhere; that lives in other projects.
 - **CPU only.** Everything runs on CPU; no GPU was used or needed.
-
-## Suggested resume wording
-
-> **RLHF, GRPO & Distillation Demo** (personal project, CPU, small
-> models) — End-to-end post-training demo on distilgpt2/gpt2: reward
-> model trained on 400 Anthropic HH-RLHF preference pairs (55%
-> held-out accuracy); PPO fine-tuning with KL penalty and a
-> repetition-penalty shaping term; GRPO on a verifiable-reward
-> arithmetic task (group-relative advantage, KL penalty) after an
-> SFT warm-start that took exact match from 0% to 10%; distilled a
-> 124M GPT-2 teacher into a 26M student on SST-2 (4.7× smaller,
-> 8.3× faster CPU inference, 56% accuracy vs 51% for a
-> cross-entropy-only student and 77% for the teacher).
